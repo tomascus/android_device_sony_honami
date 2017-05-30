@@ -30,6 +30,10 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/honami/bluetooth
 # Kernel properties
 TARGET_KERNEL_CONFIG := cm_rhine_honami_row_defconfig
 
+# Camera
+BOARD_GLOBAL_CFLAGS += -DCAMERA_VENDOR_L_COMPAT
+TARGET_USE_COMPAT_GRALLOC_ALIGN := true
+
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 26
 
